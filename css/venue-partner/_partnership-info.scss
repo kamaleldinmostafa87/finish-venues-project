@@ -1,0 +1,42 @@
+section.partnership-info {
+  background: #f6f5ec;
+  padding-bottom: 180px;
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    h2,
+    p {
+      font-weight: 400;
+      color: #3d441e;
+    }
+    h2 {
+      font-family: "recife";
+      max-width: 306px;
+      font-size: 38px;
+      line-height: 57px;
+    }
+    p {
+      @extend %repeated-p;
+    }
+  }
+  @media (max-width: $tablet) {
+    padding-bottom: 45px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      h2,
+      p {
+        width: 100%;
+      }
+      h2 {
+        margin-bottom: 45px;
+      }
+    }
+  }
+  @media (max-width: $tablet) {
+    padding-bottom: 80px;
+  }
+}

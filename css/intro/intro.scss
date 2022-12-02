@@ -1,0 +1,53 @@
+$word: 3;
+
+$duration: 5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro-sec {
+  background-color: #f6f5ec;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Helvetica";
+
+  .container-fluid,
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-fluid {
+    height: 100%;
+    flex-direction: column;
+    .word {
+      padding: 10px 30px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      color: rgba(61, 68, 30, 0.5);
+      animation: light #{$duration}s ease infinite;
+    }
+
+    @for $i from 1 through $word {
+      .word-#{$i} {
+        animation-delay: #{($i - 1) * calc($duration / $word)}s;
+      }
+    }
+  }
+}
+
+@keyframes light {
+  0% {
+    color: rgba(61, 68, 30, 0.5);
+  }
+  50% {
+    color: #3d441e;
+  }
+  100% {
+    color: rgba(61, 68, 30, 0.5);
+  }
+}

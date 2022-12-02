@@ -1,0 +1,123 @@
+.s-span {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 3px;
+  color: #3d441e;
+  margin-top: 30px;
+  display: block;
+}
+section.partnership-history {
+  background-color: #f6f5ec;
+  padding-top: 160px;
+  padding-bottom: 145px;
+  position: relative;
+  .history {
+    width: 44%;
+    margin-left: 73px;
+    margin-bottom: 90px;
+    display: block;
+    font-family: "Helvetica";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3d441e;
+  }
+  .imgg-span {
+    position: absolute;
+    right: 10em;
+    top: 13.5em;
+    width: 29%;
+    img {
+      width: 100%;
+    }
+  }
+  .city {
+    div:nth-child(1) {
+      display: none;
+    }
+    div:nth-child(2) {
+      margin-left: 137px;
+      margin-top: 155px;
+      width: 36%;
+      img {
+        width: 100%;
+      }
+    }
+    div {
+      span {
+        @extend .s-span;
+      }
+    }
+  }
+  @media (max-width: $tablet) {
+    .history {
+      width: 84%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .imgg-span {
+      display: none;
+    }
+    .city {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 40px;
+      div {
+        width: 40%;
+        span {
+          margin-top: 30px;
+        }
+      }
+      div:nth-child(2) {
+        margin-bottom: 40px;
+        margin-left: 0px;
+        margin-top: 0;
+        width: 40%;
+      }
+      div:nth-child(1) {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    .history {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      font-size: 17px;
+      line-height: 30px;
+      color: #3d441e;
+    }
+    .city {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 40px;
+      div {
+        width: 100%;
+        span {
+          margin-top: 30px;
+        }
+      }
+      div:nth-child(2) {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

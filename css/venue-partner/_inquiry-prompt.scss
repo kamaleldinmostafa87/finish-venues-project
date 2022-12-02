@@ -1,0 +1,59 @@
+.inquiry-prompt {
+  display: flex;
+  flex-direction: column;
+  background-color: #edebd8;
+  padding: 35px 5%;
+  align-items: center;
+  font-family: "Helvetica";
+
+  small {
+    margin-bottom: 2rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-family: "recife";
+    font-size: 38px;
+    line-height: 58px;
+    text-align: center;
+    max-width: 50%;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  button {
+    padding: 0.5rem 3rem;
+    background: #3d441e;
+    border: 1px solid #3d441e;
+    border-radius: 30px;
+    color: #f6f5ec;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1023px) {
+  .inquiry-prompt {
+    h2 {
+      max-width: 50%;
+    }
+
+    button {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .inquiry-prompt {
+    h2 {
+      max-width: 50%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

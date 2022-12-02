@@ -1,0 +1,49 @@
+section.venue-showcase {
+  padding-bottom: 160px;
+  margin-left: 60px;
+
+  .slides-wrapper {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .img-wrapper {
+    height: 500px;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  .navigation-arrows {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+
+    .next-arrow {
+      margin-right: 60px;
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  section.venue-showcase {
+    margin-right: 60px;
+
+    .img-wrapper {
+      margin: 0px;
+    }
+
+    .navigation-arrows .next-arrow {
+      margin-right: 0px;
+    }
+  }
+}

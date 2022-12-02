@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./css/master.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/single-venue/single-venue.css" />
+    <link rel="stylesheet" href="./css/common/action-call.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="header-logo" src="./imgs/brown-open.svg" alt="" />
+
+      <a href="#" for="check" class="checkbtn">
+        <img src="./imgs/icon.png" alt="" />
+      </a>
+      <ul class="ul-items">
+        <li><a href="#" class="venues">VENUES</a></li>
+        <li><a href="#" class="link-active">BECOME A VENUE PARTNER</a></li>
+      </ul>
+    </header>
+
+    <aside class="mobile-sidebar" id="m-s">
+      <nav class="top-nav">
+        <img src="./imgs/white-open.svg" alt="" />
+        <img src="./imgs/close-logo.png" alt="" onclick="close_sidebar();" />
+      </nav>
+      <ul>
+        <li><a href="#">Venues</a></li>
+        <li>
+          <a href="#"
+            >Become<br />
+            a Venue Partener</a
+          >
+        </li>
+        <li><a href="#">Venue Scouting</a></li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <div class="container">
+        <div class="top-content-img">
+          <span>ALL VENUES > ARIZONA</span>
+          <div class="middle-content">
+            <h2>Superstition Mountains</h2>
+            <div class="btns">
+              <button class="first-btn">OUTDOOR</button>
+              <button class="second-btn">Mountains</button>
+            </div>
+          </div>
+          <img src="./imgs/icons/marriage.svg" alt="" />
+        </div>
+      </div>
+      <div class="overview">
+        <span>Overview</span>
+        <div class="right-overview">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullam.</span
+          >
+          <div class="list">
+            <div class="list-colmn" style="margin-right: 30px">
+              <div>
+                <img src="./imgs/icons/map.svg" alt="" /><span class="styled"
+                  >CLOSEST TO PHOENIX, AZ</span
+                >
+              </div>
+              <div>
+                <img src="./imgs/icons/transport.svg" alt="" /><span
+                  class="styled"
+                  >TRANSPORT REQUIRED</span
+                >
+              </div>
+            </div>
+            <div class="list-colmn">
+              <div>
+                <img src="./imgs/icons/start.svg" alt="" /><span class="styled"
+                  >200 PERSON CAPACITY</span
+                >
+              </div>
+              <div>
+                <img src="./imgs/icons/plane.svg" alt="" /><span class="styled"
+                  >20 MIN TO PHX SKY HARBOR</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <span>Details</span>
+      <div class="right-details">
+        <div class="lists-underline">
+          <ul class="first-list">
+            <li>Culinary available</li>
+            <li>Rentals available</li>
+            <li>Alcohol BYOB</li>
+          </ul>
+          <ul class="second-list">
+            <li>DJ’s only, no bands allowed</li>
+            <li>No booking June to September</li>
+            <li>10 PM noise restriction</li>
+          </ul>
+        </div>
+        <button class="inquire-btn">INQUIRE NOW</button>
+      </div>
+    </section>
+
+    <section class="venue-showcase">
+      <div class="slides-wrapper">
+        <div class="img-wrapper">
+          <img src="./imgs/single-venue/first-photo.svg" alt="" />
+        </div>
+        <div class="img-wrapper">
+          <img src="./imgs/single-venue/second-photo.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="navigation-arrows">
+        <a class="prev-arrow" href="">
+          <img src="./imgs/icons/slider-left.svg" alt="" />
+        </a>
+        <a class="next-arrow" href="">
+          <img src="./imgs/icons/slider-right.svg" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <section class="list-with-imgs">
+      <div class="container">
+          <div class="list">
+              <span>IDEAL FOR</span>
+              <ul class="ul-list">
+                  <li><a href="#" data-img="./imgs/single-venue/first-photo.svg" class="active">Weddings</a></li>
+                  <li><a href="#" data-img="./imgs/right-img.svg">Corporate Events</a></li>
+                  <li><a href="#" data-img="./imgs/single-venue/WLG_2261 1.svg">Brand Activations</a></li>
+                  <li><a href="#" data-img="./imgs/left-img.svg">Experiences</a></li>
+                  <li><a href="#" data-img="./imgs/chairs.svg">Pop-Ups</a></li>
+                  <li><a href="#" data-img="./imgs/Frame.svg">Private Gatherings</a></li>
+              </ul>
+          </div>
+          <div class="img-col">
+              <img src="./imgs/single-venue/WLG_2261 1.svg" alt="">
+          </div>
+      </div>
+  </section>
+  <script>
+      let links = document.querySelectorAll("section.list-with-imgs ul.ul-list a");
+      links.forEach(link => {
+          link.addEventListener('click', function (e) {
+              e.preventDefault();
+              this.closest('.list-with-imgs').querySelector('.img-col img').setAttribute('src', this.getAttribute('data-img'));
+              document.querySelector('.active').classList.remove('active');
+              this.classList.add('active');
+      })})
+ 
+  </script>
+
+    <section class="action-call">
+      <div class="call-wrapper">
+        <div class="img-wrapper">
+          <img src="./imgs/venue-img.png" alt="" />
+        </div>
+        <h2 class="title">Culinary</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          sunt non temporibus possimus dolorum eaque tempore totam
+          exercitationem a, harum ducimus omnis suscipit corrupti hic? Veniam
+          doloremque exercitationem et vero!
+        </p>
+        <a href="" class="action">Learn more</a>
+      </div>
+      <div class="divider"></div>
+      <div class="call-wrapper">
+        <div class="img-wrapper">
+          <img src="./imgs/venue-img.png" alt="" />
+        </div>
+
+        <h2 class="title">Rentals</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          sunt non temporibus possimus dolorum eaque tempore totam
+          exercitationem a, harum ducimus omnis suscipit corrupti hic? Veniam
+          doloremque exercitationem et vero!
+        </p>
+        <a href="" class="action">Learn more</a>
+      </div>
+    </section>
+
+    <section class="inquiry-form">
+      <div class="full-img">
+        <img src="./imgs/single-venue/fullwidth-photo.svg" alt="" />
+      </div>
+      <div class="form-div">
+        <h2>Inquire about this venue</h2>
+        <form class="form-wrapper">
+          <div>
+            <input class="name" type="text" placeholder="NAME*" />
+            <input class="email" type="email" placeholder="EMAIL*" />
+          </div>
+          <div>
+            <input class="number" type="number" placeholder="PHONE" />
+            <input class="date" type="number" placeholder="DATE OF EVENT" />
+          </div>
+          <input class="note" type="text" placeholder="NOTE" />
+
+          <button class="repeated-btn">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="cover-color">
+      <div class="subtitle-btn">
+        <span>Venues</span>
+        <button>VIEW ALL</button>
+      </div>
+    </section>
+
+    <section class="img-description">
+      <div class="row-img">
+        <div class="">
+          <img src="./imgs/car-left.svg" alt="" />
+          <span>Superstition Mountains</span>
+        </div>
+        <div class="">
+          <img src="./imgs/chair-middle.svg" alt="" />
+          <span class="dif-color">Joshua Tree</span>
+        </div>
+        <div class="">
+          <img src="./imgs/tables-right.svg" alt="" />
+          <span class="diff-color">North Scottsdale</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="imgs-description">
+      <div class="img-col">
+        <div class="">
+          <img src="./imgs/car-left.svg" alt="" />
+          <span>Superstition Mountains</span>
+        </div>
+        <div class="">
+          <img src="./imgs/chair-middle.svg" alt="" />
+          <span class="dif-color">Joshua Tree</span>
+        </div>
+        <div class="">
+          <img src="./imgs/tables-right.svg" alt="" />
+          <span class="diff-color">North Scottsdale</span>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="action-call">
+      <div class="call-wrapper">
+        <h2 class="title">
+          Venue <br />
+          Scouting
+        </h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          sunt non temporibus possimus dolorum eaque tempore totam
+          exercitationem a, harum ducimus omnis suscipit corrupti hic? Veniam
+          doloremque exercitationem et vero!
+        </p>
+        <a href="" class="action">Learn more</a>
+      </div>
+      <div class="divider"></div>
+      <div class="call-wrapper">
+        <h2 class="title">
+          Become a <br />
+          Venue Partener
+        </h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          sunt non temporibus possimus dolorum eaque tempore totam
+          exercitationem a, harum ducimus omnis suscipit corrupti hic? Veniam
+          doloremque exercitationem et vero!
+        </p>
+        <a href="" class="action">Learn more</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- <div class="container"> -->
+        <div class="footer-container">
+          <div class="left-sec">
+            <div class="log">
+              <img class="img" src="./imgs/logos/brand.svg" alt="logo" />
+            </div>
+
+            <div class="text">
+              <p>stay in the know</p>
+            </div>
+
+            <div class="form-sec">
+              <form class="form">
+                <div class="form-container">
+                  <div class="input-sec">
+                    <input
+                      placeholder="Enter your Mail"
+                      required
+                      type="email"
+                      value="johnny.appleseed@gmail.com"
+                    />
+                  </div>
+                  <div class="btn-sec">
+                    <button class="btn" type="submit">
+                      <img
+                        src="./imgs/icons/mailbox-input.svg"
+                        alt="btn-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="mid-sec">
+            <div class="list-links">
+              <div class="title">
+                <h4>venues</h4>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#" target="_blank"> all venues </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"> list your venue </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"> search </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"> Scouting Service </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="copyright lg-view">
+              <div class="top">
+                <p>© 2022 Open Venues. All Rights Reserved.</p>
+              </div>
+
+              <div class="bottom">
+                <p>
+                  Website Design & Development by
+                  <a href="#" target="_blank"> Alex & Co.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-sec">
+            <div class="list-links">
+              <div class="title">
+                <h4>brands</h4>
+              </div>
+
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#" target="_blank"> cloth & flame </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank"> Gather Round </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <div>
+                <a href="#" target="_blank">
+                  <img class="img" src="./imgs/logos/facebook.svg" />
+                </a>
+              </div>
+
+              <div>
+                <a href="#" target="_blank">
+                  <img class="img" src="./imgs/logos/instagram.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="copyright md-view">
+            <div class="top">
+              <p>© 2022 Open Venues. All Rights Reserved.</p>
+            </div>
+
+            <div class="bottom">
+              <p>
+                Website Design & Development by
+                <a href="#" target="_blank"> Alex & Co.</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        console.log("Ready");
+        $(".slides-wrapper").slick({
+          arrows: true,
+          slidesToShow: 1.25,
+          slidesToScroll: 1,
+          infinite: false,
+          prevArrow: $(".prev-arrow"),
+          nextArrow: $(".next-arrow"),
+          responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/aos-animation.js"></script>
+  </body>
+</html>

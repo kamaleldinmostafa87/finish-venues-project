@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://fonts.cdnfonts.com/css/helvetica-neue-9"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/master.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img class="header-logo" src="./imgs/brown-open.svg" alt=""/>
+
+      <a href="#" for="check" class="checkbtn">
+        <img src="./imgs/icon.png" alt="" />
+      </a>
+      <ul class="ul-items">
+        <li><a href="#" class="venues">VENUES</a></li>
+        <li><a href="#" class="link-active">BECOME A VENUE PARTNER</a></li>
+      </ul>
+    </header>
+
+    <aside class="mobile-sidebar" id="m-s">
+      <nav class="top-nav">
+        <img src="./imgs/white-open.svg" alt="" />
+        <img src="./imgs/close-logo.png" alt="" onclick="close_sidebar();" />
+      </nav>
+      <ul>
+        <li><a href="#">Venues</a></li>
+        <li>
+          <a href="#"
+            >Become<br />
+            a Venue Partener</a
+          >
+        </li>
+        <li><a href="#">Venue Scouting</a></li>
+      </ul>
+    </aside>
+
+    <section class="content-with-image">
+      <p>
+        Open is a platform offering exclusive access to the world's rarest
+        spaces, nurturing lasting connections between people and place.
+      </p>
+      <img class="image" src="./imgs/WLG_8690 1.svg" alt="" />
+    </section>
+
+    <section class="cover-color" data-aos="fade-left">
+      <div class="subtitle-btn">
+        <span>Venues</span>
+        <button>VIEW ALL</button>
+      </div>
+    </section>
+
+    <section class="img-description">
+      <div class="row-img">
+        <div class="">
+          <img src="./imgs/car-left.svg" alt="" />
+          <span>Superstition Mountains</span>
+        </div>
+        <div class="">
+          <img src="./imgs/chair-middle.svg" alt="" />
+          <span class="dif-color">Joshua Tree</span>
+        </div>
+        <div class="">
+          <img src="./imgs/tables-right.svg" alt="" />
+          <span class="diff-color">North Scottsdale</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="imgs-desribtion">
+      <div class="imgs-row">
+        <div>
+          <img src="./imgs/car.svg" alt="" />
+          <span>Superstition Mountains</span>
+        </div>
+        <div class="">
+          <img src="./imgs/chairs.svg" alt="" />
+          <span class="dif-color">Joshua Tree</span>
+        </div>
+        <div class="">
+          <img src="./imgs/tables.svg" alt="" />
+          <span class="diff-color">North Scottsdale</span>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="describtion-btn">
+      <span class="small-tittle">LOOKING FOR SOMETHING ELSE?</span>
+      <h2>
+          I want to host
+          <div class="inline-dropdown">
+              <span class="selected-value" id='selected-value'>a corporate event</span>
+              <div class="options">
+                  <a href="#" data-value="1" class="active" id="link-1">Link #1</a>
+                  <a href="#" data-value="2" id="link-2">Link #2</a>
+              </div>
+          </div>
+      </h2>
+
+      <h2>
+          in the
+          <div class="inline-dropdown">
+              <span class="selected-value" id='selected-value'>mountains</span>
+              <div class="options">
+                  <a href="#" data-value="1" class="">used</a>
+                  <a href="#" data-value="2" class="">Link</a>
+              </div>
+          </div>
+          in
+          <div class="inline-dropdown">
+              <span class="selected-value" id='selected-value'>California</span>
+              <div class="options">
+                  <a href="#">USA</a>
+                  <a href="#">German</a>
+              </div>
+          </div>
+      </h2>
+      <script>
+          let links = document.querySelectorAll("section.describtion-btn .options a");
+
+          links.forEach(link => {
+                      link.addEventListener('click', function (e) {
+                        e.preventDefault();
+                          // links.forEach(link => link.classList.remove('active'));
+                          // this.classList.add('active');
+                        document.querySelector('.active').classList.remove('active');
+                        this.classList.add('active');
+                          this.closest('.inline-dropdown').querySelector('.selected-value').innerText = this.innerText;
+                      })
+                  });
+      </script>
+
+      <button>INQUIRE NOW</button>
+  </section>
+
+  <!-- <section class="span-with-dropdown">
+    <span class="small-tittle">LOOKING FOR SOMETHING ELSE?</span>
+    <h2>
+        I want to host
+        <div class="inline-dropdown">
+            <span class="selected-value" id='selected-value'>a corporate event</span>
+            <div class="options">
+                <a href="#" data-value="1" class="active" id="link-1">Link #1</a>
+                <a href="#" data-value="2" id="link-2">Link #2</a>
+            </div>
+        </div>
+    </h2>
+
+    <h2>
+        in the
+        <div class="inline-dropdown">
+            <span class="selected-value" id='selected-value'>mountains</span>
+            <div class="options">
+                <a href="#" data-value="1" class="">used</a>
+                <a href="#" data-value="2" class="">Link</a>
+            </div>
+        </div>
+        in
+        <div class="inline-dropdown">
+            <span class="selected-value" id='selected-value'>California</span>
+            <div class="options">
+                <a href="#">USA</a>
+                <a href="#">German</a>
+            </div>
+        </div>
+    </h2>
+    <script>
+        let links = document.querySelectorAll("section.describtion-btn .options a");
+
+        links.forEach(link => {
+                    link.addEventListener('click', function (e) {
+                      e.preventDefault();
+                        // links.forEach(link => link.classList.remove('active'));
+                        // this.classList.add('active');
+                      document.querySelector('.active').classList.remove('active');
+                      this.classList.add('active');
+                        this.closest('.inline-dropdown').querySelector('.selected-value').innerText = this.innerText;
+                    })
+                });
+    </script>
+
+    <button>INQUIRE NOW</button>
+</section> -->
+
+    <section class="about-section">
+      <div class="row-about">
+        <div class="top-left-paragraph">
+          <span>ABOUT OPEN VENUES</span>
+          <span
+            >Since 2015, we've crafted hundreds of immersive, sustainable
+            experiences in fragile, ecologically significant places across the
+            U.S. We constantly evolve our practices and processes to ensure we
+            always leave venues in extraordinary places better than we found
+            them. From a commitment to no single use plastics to protecting
+            venues' natural resources, we're devoted to protecting and nurturing
+            the properties and places that nurture us.
+          </span>
+        </div>
+        <img
+          class="chairs-in-castle"
+          src="./imgs/chairs-in-castle.svg"
+          alt=""
+        />
+      </div>
+      <img class="chairs-desert" src="./imgs/chairs.svg" alt="" />
+      <img class="frame" src="./imgs/Frame.svg" alt="" />
+    </section>
+
+    <!-- <section class="about-section">
+      <div class="about-row">
+        <div class="top-left-paragraph">
+          <span>ABOUT OPEN VENUES</span>
+          <span
+            >Since 2015, we've crafted hundreds of immersive, sustainable
+            experiences in fragile, ecologically significant places across the
+            U.S. We constantly evolve our practices and processes to ensure we
+            always leave venues in extraordinary places better than we found
+            them. From a commitment to no single use plastics to protecting
+            venues' natural resources, we're devoted to protecting and nurturing
+            the properties and places that nurture us.
+          </span>
+        </div>
+        <img
+          class="img-col"
+          src="./imgs/castle-chairs.svg"
+          alt=""
+        />
+      </div>
+      <img class="chairs-desert-img" src="./imgs/chairs.svg" alt="" />
+      <img class="frame-img" src="./imgs/Frame.svg" alt="" />
+    </section> -->
+
+    <section class="titles-img">
+      <div class="left-titles">
+        <h3>Venue Scouting</h3>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.</span
+        ><br />
+        <a href="#">LEARN MORE</a>
+      </div>
+      <div class="right-img">
+        <img src="./imgs/right-img.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- <section class="titles-img">
+      <div class="left-titles">
+        <h3>Venue Scouting</h3>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.</span
+        ><br />
+        <a href="#">LEARN MORE</a>
+      </div>
+      <div class="right-img">
+        <img src="./imgs/right-img.svg" alt="" />
+      </div>
+    </section> -->
+
+    <section class="content-box">
+      <div class="left-box">
+        <img src="./imgs/left-img.svg" alt="" />
+      </div>
+      <div class="right-box">
+        <h3>Become a Venue Partner</h3>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.</span
+        ><br />
+        <a href="#">LEARN MORE</a>
+      </div>
+    </section>
+
+  <!-- <section class="content-box">
+      <div class="img-col">
+        <img src="./imgs/left-img.svg" alt="" />
+      </div>
+      <div class="content-col">
+        <h3>Become a Venue Partner</h3>
+        <span
+          >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.</span
+        ><br />
+        <a href="#">LEARN MORE</a>
+      </div>
+    </section> -->
+
+    <footer class="footer">
+      <!-- <div class="container"> -->
+        <div class="footer-container">
+          <div class="left-sec">
+            <div class="log">
+              <img class="img" src="./imgs/logos/brand.svg" alt="logo" />
+            </div>
+
+            <div class="text">
+              <p>stay in the know</p>
+            </div>
+
+            <div class="form-sec">
+              <form class="form">
+                <div class="form-container">
+                  <div class="input-sec">
+                    <input
+                      placeholder="Enter your Mail"
+                      required
+                      type="email"
+                      value="johnny.appleseed@gmail.com"
+                    />
+                  </div>
+                  <div class="btn-sec">
+                    <button class="btn" type="submit">
+                      <img
+                        src="./imgs/icons/mailbox-input.svg"
+                        alt="btn-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="mid-sec">
+            <div class="list-links">
+              <div class="title">
+                <h4>venues</h4>
+              </div>
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#"> all venues </a>
+                  </li>
+                  <li>
+                    <a href="#"> list your venue </a>
+                  </li>
+                  <li>
+                    <a href="#"> search </a>
+                  </li>
+                  <li>
+                    <a href="#"> Scouting Service </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="copyright lg-view">
+              <div class="top">
+                <p>© 2022 Open Venues. All Rights Reserved.</p>
+              </div>
+
+              <div class="bottom">
+                <p>
+                  Website Design & Development by
+                  <a href="#" target="_blank"> Alex & Co.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-sec">
+            <div class="list-links">
+              <div class="title">
+                <h4>brands</h4>
+              </div>
+
+              <div class="list">
+                <ul>
+                  <li>
+                    <a href="#"> cloth & flame </a>
+                  </li>
+                  <li>
+                    <a href="#"> Gather Round </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <div>
+                <a href="#" target="_blank">
+                  <img class="img" src="./imgs/logos/facebook.svg" />
+                </a>
+              </div>
+
+              <div>
+                <a href="#" target="_blank">
+                  <img class="img" src="./imgs/logos/instagram.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="copyright md-view">
+            <div class="top">
+              <p>© 2022 Open Venues. All Rights Reserved.</p>
+            </div>
+
+            <div class="bottom">
+              <p>
+                Website Design & Development by
+                <a href="#" target="_blank"> Alex & Co.</a>
+              </p>
+            </div>
+          </div> -->
+        <!-- </div> -->
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos-animation.js"></script>
+  </body>
+</html>

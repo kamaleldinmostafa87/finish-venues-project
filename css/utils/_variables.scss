@@ -1,0 +1,40 @@
+%m-margin {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+%f-flex {
+  display: flex;
+}
+
+%flex-column {
+  @extend %f-flex;
+  flex-direction: column;
+}
+
+%b-btn {
+  font: {
+    weight: 400;
+    size: 12px;
+  }
+
+  height: 45px;
+  line-height: 14px;
+  background: #3d441e;
+  border: 1px solid #3d441e;
+  border-radius: 50px;
+  color: #f6f5ec;
+}
+
+%repeated-p {
+  padding: 0;
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3d441e;
+  width: 44%;
+}
+
+$tablet: 1024px;
+$mobile: 767px;

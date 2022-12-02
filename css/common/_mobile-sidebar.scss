@@ -1,0 +1,50 @@
+.mobile-sidebar {
+  display: none;
+  position: fixed;
+  width: 768px;
+  height: 1079px;
+  background: #727337;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  &.open {
+    display: block;
+  }
+  .container {
+    @extend %m-margin;
+    // width: 80%;
+  }
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 24px 60px;
+    img:first-of-type {
+      margin-right: auto;
+    }
+  }
+  ul {
+    padding: 50px 60px;
+    li {
+      padding-bottom: 50px;
+      a {
+        font-family: "recife";
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 56px;
+        color: #f6f5ec;
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    width: 100%;
+    height: 906px;
+    z-index: 5;
+    .top-nav {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .top-nav,
+    ul {
+      padding-left: 25px;
+    }
+  }
+}

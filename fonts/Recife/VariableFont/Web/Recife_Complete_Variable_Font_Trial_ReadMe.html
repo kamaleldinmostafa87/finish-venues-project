@@ -1,0 +1,96 @@
+<html>
+<head>
+    
+<style type="text/css">
+    
+@font-face {
+font-family: 'RecifeComplete-Upright';
+src:  url('RecifeComplete_Variable_Upright_Web_Trial.woff') format('woff');
+src:  url('RecifeComplete_Variable_Upright_Web_Trial.woff2') format('woff2');
+}
+@font-face {
+font-family: 'RecifeComplete-Italic';
+src:  url('RecifeComplete_Variable_Italic_Web_Trial.woff') format('woff');
+src:  url('RecifeComplete_Variable_Italic_Web_Trial.woff2') format('woff2');
+}      
+    
+body {
+color: #333;
+margin: 6vh;
+font-size: 3vh;
+line-height: 1.1;
+  
+font-feature-settings: 'kern';       /* turns on kerning */ 
+text-rendering: optimizeLegibility;  /* emphasise on legibility when rendering, turns on ligatures and kerning */    
+-webkit-font-smoothing: antialiased; /* apply font anti-aliasing for Webkit on OSX */    
+-moz-osx-font-smoothing: grayscale;  /* apply font anti-aliasing for Firefox on OSX */
+}
+    
+.title {
+font-family: 'RecifeComplete-Upright';
+font-variation-settings: 'wght' 700, 'opsz' 000;  /* 'wght' = Font-Weight (beetween 0 and 1000) */
+                                                  /* 'opsz' = Optical Size (beetween 0 and 100) */
+}     
+.lead {
+font-family: 'RecifeComplete-Italic';
+}  
+.text {
+font-family: 'RecifeComplete-Upright';
+}  
+
+/* a little CSS3 animation */    
+.text    {
+animation-name: animation-wght;
+animation-iteration-count: infinite; 
+animation-direction: alternate;    
+animation-duration: 3s; 
+ } 
+@keyframes animation-wght {
+000% {font-variation-settings: 'wght' 1000, 'opsz' 000;}
+030% {font-variation-settings: 'wght' 1000, 'opsz' 000;}
+060% {font-variation-settings: 'wght' 0000, 'opsz' 000;}
+100% {font-variation-settings: 'wght' 0000, 'opsz' 000;}
+}       
+.lead {
+animation-name: animation-opsz;
+animation-iteration-count: infinite;
+animation-direction: alternate;        
+animation-duration: 3s; 
+}      
+@keyframes animation-opsz {
+000% {font-variation-settings: 'opsz' 100, 'wght' 1000;}
+030% {font-variation-settings: 'opsz' 100, 'wght' 1000;}
+060% {font-variation-settings: 'opsz' 000, 'wght' 1000;}
+100% {font-variation-settings: 'opsz' 000, 'wght' 1000;}
+}  
+a  {
+text-decoration: none;
+color: #999;
+}         
+</style>
+    
+</head>
+
+<body>
+    
+<div class="title">     
+Recife Complete Trial
+</div>     
+<br>     
+<div class="lead">    
+Luzi Type provideds variable webfonts in woff and woff2.
+</div>    
+<br>     
+<div class="text">    
+This trial font contanins a limited caracterset, including<br>
+the glyphs A-Z in lower- and uppercase, numbers Zero-Nine<br> 
+as well Comma, Period and hyphen. Further including are <br>
+the full spacing and kerning. 
+<br>
+<br>    
+Please note that trials can not be used publicly. <br>
+Trial versions are made for testing inside of <br>
+your office or university. Have a look at our licence agreement.
+</div>        
+</body>
+</html>    

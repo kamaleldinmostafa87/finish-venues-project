@@ -1,0 +1,26 @@
+@import "../utils/variables";
+
+.repeated-btn {
+  font-family: "Helvetica";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 3px;
+  color: #f6f5ec;
+  background: #3d441e;
+  border: 1px solid #3d441e;
+  border-radius: 50px;
+  width: 196px;
+  height: 45px;
+}
+%active {
+  color: #3D441E;
+}
+
+@import "./overview";
+@import "./_details.scss";
+@import "./_showcase.scss";
+@import "./_list-with-imgs.scss";
+@import "./_inquiry-form-img.scss";
+@import "./_cover-color.scss";
+@import "./_img-description.scss";
